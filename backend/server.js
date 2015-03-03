@@ -7,7 +7,7 @@ var http = require('http'),
 var userList = [];
 
 var wsServer = new WSSever({
-    host: 'qimiaodian.com',
+    host: '42.96.195.166',
     port: 8200
 }).on('connection', function(ws) {
     var userData = {};
