@@ -1,0 +1,9 @@
+{
+    "name": "im-demo",
+    "description": "¼´Ê±Í¨Ñ¶ demo",
+    "version": "0.0.1",
+    "dependencies": {
+        "ws": "^0.7.1",
+        "moment": "^2.9.0 "
+    }
+}

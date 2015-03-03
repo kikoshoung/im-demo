@@ -1,0 +1,11 @@
+<div class="mod-userlist-header">{{items.length}} people online</div>
+<ul class="mod-userlist-list">
+	{{each items as item}}
+	<li class="mod-userlist-item {{if item.id == me.id}}mod-userlist-me{{/if}}">
+		<div class="mod-userlist-avatar">{{item.name[0].toUpperCase()}}</div>
+		<div class="mod-userlist-name">
+			<div class="ellipsis">{{item.name}}</div>
+		</div>
+	</li>
+	{{/each}}
+</ul>
