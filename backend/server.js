@@ -102,16 +102,3 @@ function onLeave(data){
         wsClient.send(JSON.stringify({type: 'leave', data: userList}));
     });
 }
-// function handleUserList(userList){
-//     var obj = {},
-//         ret = [];
-
-//     userList.forEach(function(user){
-//         if(!obj[user.id]){
-//             ret.push(user);
-//             obj[obj[user.id]] = true;
-//         }
-//     });
-
-//     return ret;
-// }
