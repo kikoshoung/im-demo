@@ -17,7 +17,7 @@ define([
 		},
 		sync: function(){
 			$.ajax({
-				url: 'http://qimiaodian.com:7001',
+				url: 'http://qimiaodian.com:8001',
 				type: 'POST',
 				data: JSON.stringify(this.toJSON())
 			}).done(function(){

@@ -56,7 +56,7 @@ define([
 			var self = this;
 
 			if(window.WebSocket){
-				var socket = new window.WebSocket('ws://qimiaodian.com:7002');
+				var socket = new window.WebSocket('ws://qimiaodian.com:8002');
 				socket.onopen = function(e) {
 					socket.onmessage = function(e) {
 						self.handleMessage(e.data)
