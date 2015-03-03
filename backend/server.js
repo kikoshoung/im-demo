@@ -8,7 +8,7 @@ var userList = [];
 
 var wsServer = new WSSever({
     host: 'localhost',
-    port: 8002
+    port: 8101
 }).on('connection', function(ws) {
     var userData = {};
     ws.on('message', function(data){
@@ -68,7 +68,7 @@ http.createServer(function(req, res) {
 
     }
     res.end();
-}).listen(8001);
+}).listen(8100);
 
 function saveMessage(){}
 function notifyMessage(message){
