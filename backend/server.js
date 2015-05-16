@@ -8,6 +8,7 @@ var userList = [];
 
 var wsServer = new WSSever({
     host: '42.96.195.166',
+    // host: 'localhost',
     port: 8200
 }).on('connection', function(ws) {
     var userData = {};

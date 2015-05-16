@@ -18,6 +18,6 @@ requirejs.config({
 
 require([
     'js/app'
-], function(App) {
-    var app = new App();
+], function(app) {
+    
 });

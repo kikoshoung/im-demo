@@ -89,6 +89,8 @@ body {
     vertical-align: middle;
     resize: none;
     outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 /* chattip */
@@ -120,6 +122,7 @@ body {
 }
 .mod-msg-extra{
 	height: 16px;
+    overflow: hidden;
 }
 .mod-msg-mine .mod-msg-avatar,
 .mod-msg-mine .mod-msg-uid,
@@ -279,3 +282,5 @@ body {
         left: 0;
     }
 }
+
+
