@@ -240,6 +240,12 @@ body {
     font-size: 30px;
 }
 
+/* loading */
+.mod-loading{
+    text-align: center;
+    padding-top: 100px;
+}
+
 /* ... */
 .ellipsis{
     display: inline-block;

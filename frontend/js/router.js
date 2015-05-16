@@ -1,16 +1,13 @@
 define([
-    'backbone'
-], function(Backbone, App) {
+    'backbone',
+    'js/page/demo'
+], function(Backbone, Demo) {
     return Backbone.Router.extend({
         routes: {
             '!/demo': 'demo'
         },
         demo: function() {
-            require([
-            	'js/page/demo'
-            ], function(Demo){
-            	var demo = new Demo();
-            });
+            var demo = new Demo();
         }
     });
 });

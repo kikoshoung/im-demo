@@ -1,6 +1,5 @@
-requirejs.config({
+({
     baseUrl: './',
-    // urlArgs: 'v=' + Math.random(),
     paths: {
         text: 'js/lib/require-text',
         template: 'js/lib/art',
@@ -10,17 +9,10 @@ requirejs.config({
     },
     shim: {
         backbone: {
-            deps: ['underscore', 'jquery'],
+            deps: ['underscore'],
             exports: 'Backbone'
         }
-    }
-});
-
-require([
-    'backbone',
-    'template',
-    'text',
-    'js/app'
-], function(app) {
-
-});
+    },
+    name: "js/init",
+    out: "js/init-built.js"
+})
