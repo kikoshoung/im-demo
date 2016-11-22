@@ -7,7 +7,7 @@ var http = require('http'),
 var userList = [];
 
 var wsServer = new WSSever({
-    host: '42.96.195.166',
+    host: '101.200.180.200',
     // host: 'localhost',
     port: 8200
 }).on('connection', function(ws) {
@@ -55,7 +55,7 @@ http.createServer(function(req, res) {
                 postData += postDataChunk;
             });
             req.on('end', function() {
-                res.write('Request resolved');
+                // res.write('Request resolved');
 
                 // 保存信息到服务器
                 saveMessage();
