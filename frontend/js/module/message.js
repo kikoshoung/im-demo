@@ -17,7 +17,7 @@ define([
 		},
 		sync: function(){
 			$.ajax({
-				url: 'http://101.200.180.200:8100',
+				url: 'http://43.155.105.128:8100',
 				type: 'POST',
 				data: JSON.stringify(this.toJSON())
 			}).done(function(){

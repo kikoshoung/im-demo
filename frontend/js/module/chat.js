@@ -56,7 +56,7 @@ define([
 			var self = this;
 
 			if(window.WebSocket){
-				var socket = new window.WebSocket('ws://101.200.180.200:8200');
+				var socket = new window.WebSocket('ws://43.155.105.128:8200');
 				socket.onopen = function(e) {
 					socket.onmessage = function(e) {
 						self.handleMessage(e.data)

@@ -7,7 +7,7 @@ var http = require('http'),
 var userList = [];
 
 var wsServer = new WSSever({
-    host: '101.200.180.200',
+    host: '43.155.105.128',
     // host: 'localhost',
     port: 8200
 }).on('connection', function(ws) {
@@ -15,7 +15,7 @@ var wsServer = new WSSever({
     ws.on('message', function(data){
         data = JSON.parse(data);
         switch(data.type){
-            case 'connect': // 通知有用户加入聊天
+            case 'connect':
                 onConnect(data);
                 userData = data;
                 break;
@@ -56,11 +56,7 @@ http.createServer(function(req, res) {
             });
             req.on('end', function() {
                 // res.write('Request resolved');
-
-                // 保存信息到服务器
                 saveMessage();
-
-                // 向其他用户广播消息
                 notifyMessage(postData);
             });
             break;
